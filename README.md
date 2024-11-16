@@ -6,8 +6,7 @@ Description
 
 This project implements a basic RESTful API using Node.js and Express to manage user data. The API reads from a local JSON file and provides multiple endpoints to retrieve user information based on different criteria.
 
-![Text description that will show if image doesn't load](./docs/images/image1.png "Image Caption will show when you hover")
-![Text description that will show if image doesn't load](./docs/images/image2.png "Image Caption will show when you hover")
+![Text description that will show if image doesn't load](./docs/images/image2.png "test for users name")
 ![Text description that will show if image doesn't load](./docs/images/image3.png "Image Caption will show when you hover")
 ![Text description that will show if image doesn't load](./docs/images/image4.png "Image Caption will show when you hover")
 ![Text description that will show if image doesn't load](./docs/images/image5.png "Image Caption will show when you hover")
