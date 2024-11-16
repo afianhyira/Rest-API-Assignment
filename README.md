@@ -1,30 +1,44 @@
-# Basic RESTful User API
+Basic RESTful User API
 
 A simple Node.js/Express API that serves user data from a JSON file through various endpoints.
 
-## Description
+Description
 
 This project implements a basic RESTful API using Node.js and Express to manage user data. The API reads from a local JSON file and provides multiple endpoints to retrieve user information based on different criteria.
 
-## Prerequisites
+![Text description that will show if image doesn't load](./docs/images/image1.png "Image Caption will show when you hover")
+![Text description that will show if image doesn't load](./docs/images/image2.png "Image Caption will show when you hover")
+![Text description that will show if image doesn't load](./docs/images/image3.png "Image Caption will show when you hover")
+![Text description that will show if image doesn't load](./docs/images/image4.png "Image Caption will show when you hover")
+![Text description that will show if image doesn't load](./docs/images/image5.png "Image Caption will show when you hover")
+![Text description that will show if image doesn't load](./docs/images/image6.png "Image Caption will show when you hover")
+![Text description that will show if image doesn't load](./docs/images/image7.png "Image Caption will show when you hover")
+![Text description that will show if image doesn't load](./docs/images/image9.png "Image Caption will show when you hover")
+![Text description that will show if image doesn't load](./docs/images/image10.png "Image Caption will show when you hover")
+![Text description that will show if image doesn't load](./docs/images/image11.png "Image Caption will show when you hover")
+
+Prerequisites
 
 - Node.js (v12 or higher)
 - npm (Node Package Manager)
 
-## Installation
+Installation
 
 1. Clone the repository:
+
 ```bash
 git clone [your-repository-url]
 cd [repository-name]
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Create a `users.json` file in the root directory with the following content:
+
 ```json
 {
   "user1": {
@@ -48,54 +62,60 @@ npm install
 }
 ```
 
-## Running the Application
+Running the Application
 
 Start the server:
+
 ```bash
 node app.js
 ```
 
 The server will run on `http://localhost:5000`
 
-## API Endpoints
+API Endpoints
 
-### List All Users
+List All Users
+
 - **URL**: `/users`
 - **Method**: `GET`
 - **Sample Request**: `GET http://localhost:5000/users`
 - **Success Response**: List of all users in JSON format
 
-### Get User by ID
+Get User by ID
+
 - **URL**: `/users/:id`
 - **Method**: `GET`
 - **URL Params**: `id=[integer]`
 - **Sample Request**: `GET http://localhost:5000/users/1`
 - **Success Response**: User details for the specified ID
 
-### Get Users by Profession
+Get Users by Profession
+
 - **URL**: `/users/profession/:profession`
 - **Method**: `GET`
 - **URL Params**: `profession=[string]`
 - **Sample Request**: `GET http://localhost:5000/users/profession/developer`
 - **Success Response**: List of users with the specified profession
 
-### Get User by Name
+Get User by Name
+
 - **URL**: `/users/name/:name`
 - **Method**: `GET`
 - **URL Params**: `name=[string]`
 - **Sample Request**: `GET http://localhost:5000/users/name/Alice`
 - **Success Response**: User details for the specified name
 
-## Error Handling
+Error Handling
 
 The API includes error handling for the following scenarios:
+
 - Accessing non-existent user IDs
 - Requesting non-existent professions
 - Searching for non-existent names
 
 Error responses will include appropriate status codes and error messages.
 
-## Testing
+Testing
 
 You can test the API using any REST client (e.g., Postman):
 
@@ -104,12 +124,13 @@ You can test the API using any REST client (e.g., Postman):
 3. Verify the responses and error handling
 
 Example test cases:
+
 - `GET /users` - Should return all users
 - `GET /users/1` - Should return Alice's details
 - `GET /users/profession/developer` - Should return all developers
 - `GET /users/name/Bob` - Should return Bob's details
 
-## Project Structure
+Project Structure
 
 ```
 ├── app.js              # Main application file
@@ -118,8 +139,7 @@ Example test cases:
 └── README.md          # This file
 ```
 
-## Dependencies
+Dependencies
 
 - Express.js - Web application framework
 - fs (Node.js built-in) - File system module for reading JSON file
-
